@@ -1,27 +1,35 @@
 # Platform & AI Engineer
 
-12+ years building and operating production infrastructure, from bare-metal clusters to cloud-native platforms. Currently focused on where infrastructure engineering meets AI-driven automation.
+12+ years in infrastructure, platform engineering, and operations. Currently building at the intersection of bare-metal infrastructure and AI agent systems.
 
-## What I'm Working On
+I run a multi-node Kubernetes cluster on Proxmox that hosts 50+ applications, including AI-powered platforms I've built from scratch. Everything is GitOps-managed, Terraform-provisioned, and monitored end-to-end.
 
-**AI Agent Infrastructure** -- Orchestration platforms that dispatch autonomous AI agents across distributed systems. Multi-agent workflows with parallel execution, scheduled runs, and real-time observability.
+## Current Focus
 
-**Bare-Metal Kubernetes** -- Multi-node K3s cluster on Proxmox with GitOps (ArgoCD), automated storage (Longhorn), load balancing (MetalLB), and 15+ production workloads including AI-powered applications.
+**[agents-platform](https://github.com/kernelpanic09/agents-platform)** -- An AI agent orchestration platform with RAG (Qdrant + Ollama), LangGraph workflows, cost/latency observability, and LLM evaluation. 26 agent personas that dispatch via SSH to Claude Code for real infrastructure tasks. Built with Node.js, React, LangChain, and SQLite.
 
-**Infrastructure as Code** -- Terraform-managed VM provisioning, cloud-init templating, and automated cluster bootstrapping across multiple hypervisor nodes.
+**Bare-Metal K3s** -- 3-node cluster on Proxmox running 50+ workloads with ArgoCD (GitOps), Longhorn (distributed storage), MetalLB (load balancing), Traefik (ingress), and Prometheus/Grafana (observability). Every app deploys through a single `deploy.sh` that builds, pushes, and syncs automatically.
+
+**Infrastructure as Code** -- Terraform modules for Proxmox VM provisioning with cloud-init templating. Ansible for OS bootstrapping and cluster maintenance. Pi-hole DNS (HA pair), WireGuard VPN, pfSense firewall.
 
 ## Stack
 
-**Platform:** K3s · Proxmox · ArgoCD · Traefik · MetalLB · Longhorn · Helm  
-**Infrastructure:** Terraform · Ansible · cloud-init · pfSense · WireGuard · Pi-hole  
-**AI/ML:** Claude Code · MCP · Multi-agent orchestration · LLM evaluation · Prompt engineering  
-**Languages:** Python · HCL · Bash · Go · JavaScript/TypeScript  
-**Cloud:** AWS (IAM, S3, Organizations, Identity Center) · GitHub Actions  
-**Observability:** Prometheus · Grafana · Uptime Kuma  
+```
+Platform        K3s · Proxmox · ArgoCD · Traefik · MetalLB · Longhorn · Helm
+Infrastructure  Terraform · Ansible · cloud-init · pfSense · WireGuard · Pi-hole
+AI Engineering  LangChain · LangGraph · Qdrant · Ollama · Claude API · MCP
+Languages       JavaScript/TypeScript · Python · HCL · Bash · Go
+Cloud           AWS (Organizations, Identity Center, S3, IAM) · GitHub Actions
+Observability   Prometheus · Grafana · Uptime Kuma · Custom telemetry
+```
 
-## Philosophy
+## How I Work
 
-Production-first. Every project runs on real infrastructure, handles real traffic, and solves real problems. No toy demos. If it doesn't survive a node reboot, it's not done.
+I build things that run on real hardware, serve real traffic, and break in real ways. The systems I operate handle storage failures, node reboots, DHCP lease changes, and USB passthrough race conditions -- not just happy-path demos.
+
+I treat AI agents the same way I treat infrastructure: if you can't observe it, schedule it, evaluate it, and recover from its failures, it's not production-ready.
+
+Every project ships with IaC, GitOps manifests, monitoring, and a one-command deploy pipeline. The gap between "it works on my machine" and "it runs in production" is where I spend most of my time.
 
 ---
 
