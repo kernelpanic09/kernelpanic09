@@ -38,7 +38,7 @@ Languages       Python · HCL · Bash · Go · JavaScript/TypeScript · YAML
 
 ## Current Work
 
-Building AI agent orchestration systems that bring the same operational standards I apply to infrastructure -- observability, evaluation, cost tracking, automated recovery -- to LLM-powered workflows. The code is here on GitHub.
+Building AI agent orchestration systems that bring the same operational standards I apply to infrastructure -- observability, evaluation, cost tracking, automated recovery to LLM-powered workflows. The code is here on GitHub.
 
 ---
 
