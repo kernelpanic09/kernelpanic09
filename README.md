@@ -1,36 +1,45 @@
-# Platform & AI Engineer
+# Cloud & Platform Engineer
 
-12+ years in infrastructure, platform engineering, and operations. Currently building at the intersection of bare-metal infrastructure and AI agent systems.
+12 years designing, building, and operating production infrastructure across telecom, enterprise, cybersecurity, and cloud environments. I specialize in automation that doesn't break at 2 AM -- zero-downtime deployments, infrastructure as code, and systems that recover without a phone call.
 
-I run a multi-node Kubernetes cluster on Proxmox that hosts 50+ applications, including AI-powered platforms I've built from scratch. Everything is GitOps-managed, Terraform-provisioned, and monitored end-to-end.
+Currently focused on applying that operational rigor to AI agent infrastructure and LLM-powered automation.
 
-## Current Focus
+## What I Do
 
-**[agents-platform](https://github.com/kernelpanic09/agents-platform)** -- An AI agent orchestration platform with RAG (Qdrant + Ollama), LangGraph workflows, cost/latency observability, and LLM evaluation. 26 agent personas that dispatch via SSH to Claude Code for real infrastructure tasks. Built with Node.js, React, LangChain, and SQLite.
+**Cloud Engineering** -- AWS architecture and operations at scale. VPC design, IAM policy engineering, multi-account Organizations with Identity Center, S3 lifecycle management, and cost optimization across thousands of instances. I build landing zones that teams can ship on without filing tickets.
 
-**Bare-Metal K3s** -- 3-node cluster on Proxmox running 50+ workloads with ArgoCD (GitOps), Longhorn (distributed storage), MetalLB (load balancing), Traefik (ingress), and Prometheus/Grafana (observability). Every app deploys through a single `deploy.sh` that builds, pushes, and syncs automatically.
+**Infrastructure as Code** -- Terraform for everything from VM provisioning to cloud networking. Modular, version-controlled, peer-reviewed. Paired with Ansible for OS-level configuration and drift remediation. No hand-configured servers.
 
-**Infrastructure as Code** -- Terraform modules for Proxmox VM provisioning with cloud-init templating. Ansible for OS bootstrapping and cluster maintenance. Pi-hole DNS (HA pair), WireGuard VPN, pfSense firewall.
+**CI/CD & GitOps** -- End-to-end pipelines from commit to production. GitHub Actions, ArgoCD, container builds, automated testing, and deployment strategies that keep services up during rollouts. If it requires a maintenance window, the pipeline isn't done.
+
+**Networking & Security** -- Started in telecom, spent years in cybersecurity. Comfortable at every layer from BGP peering and VLAN segmentation to WAF rules and zero-trust network policies. Security isn't a phase -- it's how the infrastructure gets built.
+
+**Kubernetes & Container Orchestration** -- Production clusters with GitOps-driven deployments, distributed storage, service mesh, ingress routing, and observability. Experienced with both managed services and bare-metal clusters.
 
 ## Stack
 
 ```
-Platform        K3s · Proxmox · ArgoCD · Traefik · MetalLB · Longhorn · Helm
-Infrastructure  Terraform · Ansible · cloud-init · pfSense · WireGuard · Pi-hole
-AI Engineering  LangChain · LangGraph · Qdrant · Ollama · Claude API · MCP
-Languages       JavaScript/TypeScript · Python · HCL · Bash · Go
-Cloud           AWS (Organizations, Identity Center, S3, IAM) · GitHub Actions
-Observability   Prometheus · Grafana · Uptime Kuma · Custom telemetry
+Cloud           AWS (VPC, IAM, Organizations, S3, EC2, ECS, Lambda, CloudFormation)
+IaC             Terraform · Ansible · Packer · cloud-init
+CI/CD           GitHub Actions · ArgoCD · Jenkins · Docker · Helm
+Containers      Kubernetes · K3s · Docker Compose · containerd
+Networking      VPC/VLAN design · BGP · DNS · VPN · Load Balancing · Firewall
+Security        IAM · Network Policies · TLS · Secret Management · SIEM
+Observability   Prometheus · Grafana · CloudWatch · ELK · Uptime Kuma
+AI/ML           LangChain · LangGraph · RAG · Vector Databases · Claude API
+Languages       Python · HCL · Bash · Go · JavaScript/TypeScript · YAML
 ```
 
-## How I Work
+## Certifications
 
-I build things that run on real hardware, serve real traffic, and break in real ways. The systems I operate handle storage failures, node reboots, DHCP lease changes, and USB passthrough race conditions -- not just happy-path demos.
+- HashiCorp Certified: Terraform Associate
+- Red Hat Certified System Administrator (RHCSA) -- RHEL 8
+- Extreme Networks HDE (High Density Environments)
 
-I treat AI agents the same way I treat infrastructure: if you can't observe it, schedule it, evaluate it, and recover from its failures, it's not production-ready.
+## Current Work
 
-Every project ships with IaC, GitOps manifests, monitoring, and a one-command deploy pipeline. The gap between "it works on my machine" and "it runs in production" is where I spend most of my time.
+Building AI agent orchestration systems that bring the same operational standards I apply to infrastructure -- observability, evaluation, cost tracking, automated recovery -- to LLM-powered workflows. The code is here on GitHub.
 
 ---
 
-`USA` · `kernelpanic09`
+`USA`
