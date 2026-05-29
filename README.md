@@ -4,6 +4,8 @@
 
 Currently applying that operational depth to AI agent infrastructure and LLM-powered automation.
 
+Portfolio: **[kernelpanic09.github.io](https://kernelpanic09.github.io)**
+
 ## What I Do
 
 **Cloud Engineering.** AWS architecture and operations at scale. VPC design, IAM policy engineering, multi-account Organizations with Identity Center, S3 lifecycle management, and cost optimization across thousands of instances. I build landing zones that teams can ship on without filing tickets.
