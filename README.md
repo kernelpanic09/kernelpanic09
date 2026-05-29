@@ -1,6 +1,6 @@
 # Cloud & Platform Engineer
 
-12 years designing, building, and operating production infrastructure across telecom, enterprise, cybersecurity, and cloud environments. I specialize in automation that holds up under pressure. Zero-downtime deployments, infrastructure as code, and systems that recover without a phone call.
+12 years designing, building, and operating production infrastructure across enterprise, cybersecurity, and cloud environments. I specialize in automation that holds up under pressure. Zero-downtime deployments, infrastructure as code, and systems that recover without a phone call.
 
 Currently applying that operational depth to AI agent infrastructure and LLM-powered automation.
 
@@ -14,22 +14,23 @@ Portfolio: **[kernelpanic09.github.io](https://kernelpanic09.github.io)**
 
 **CI/CD and GitOps.** End-to-end pipelines from commit to production. GitHub Actions, ArgoCD, container builds, automated testing, and deployment strategies that keep services up during rollouts. If it requires a maintenance window, the pipeline isn't done.
 
-**Networking and Security.** Started in telecom, spent years in cybersecurity. Comfortable at every layer from BGP peering and VLAN segmentation to WAF rules and zero-trust network policies. Security is baked into how the infrastructure gets built, not bolted on after.
+**Networking and Security.** Years of cybersecurity work and deep networking experience. Comfortable at every layer from BGP peering and VLAN segmentation to WAF rules and zero-trust network policies. Security is baked into how the infrastructure gets built, not bolted on after.
 
 **Kubernetes and Container Orchestration.** Production clusters with GitOps-driven deployments, distributed storage, service mesh, ingress routing, and observability. Experienced with both managed services and bare-metal clusters.
 
 ## Stack
 
 ```
-Cloud           AWS (VPC, IAM, Organizations, S3, EC2, ECS, Lambda, CloudFormation)
-IaC             Terraform · Ansible · Packer · cloud-init
-CI/CD           GitHub Actions · ArgoCD · Jenkins · Docker · Helm
-Containers      Kubernetes · K3s · Docker Compose · containerd
-Networking      VPC/VLAN design · BGP · DNS · VPN · Load Balancing · Firewall
-Security        IAM · Network Policies · TLS · Secret Management · SIEM
-Observability   Prometheus · Grafana · CloudWatch · ELK · Uptime Kuma
-AI/ML           LangChain · LangGraph · RAG · Vector Databases · Claude API
-Languages       Python · HCL · Bash · Go · JavaScript/TypeScript · YAML
+Cloud           AWS (VPC, IAM, Organizations, EKS, ECS, Lambda, S3, RDS, Bedrock, Route 53, CloudFront, KMS)
+IaC             Terraform · Ansible · Packer · cloud-init · Helm
+CI/CD           GitHub Actions · ArgoCD · Jenkins · Docker · cosign · Trivy
+Containers      Kubernetes · EKS · ECS · K3s · containerd · Docker
+Networking      VPC design · BGP · DNS · TLS · VPN · Transit Gateway · Load Balancing · WAF
+Security        IAM · KMS · Secrets Manager · OIDC · SAML · GuardDuty · Security Hub · Vault
+Data            PostgreSQL · MySQL · Aurora · DynamoDB · Redis · SQLite
+AI / ML         LangChain · LangGraph · RAG · Vector DBs · Qdrant · Ollama · Bedrock · Claude API · MCP
+Observability   Prometheus · Grafana · CloudWatch · OpenTelemetry · ELK · X-Ray
+Languages       Python · Go · TypeScript · HCL · Bash · YAML
 ```
 
 ## Certifications
